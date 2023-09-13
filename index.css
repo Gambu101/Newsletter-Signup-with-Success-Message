@@ -1,0 +1,201 @@
+body{
+    font-family: 'Overpass', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.image_section{
+    background-image: url(./newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-mobile.svg);
+    background-size:  100vw;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 65vw;
+    border-radius: 0px 0px 20px 20px;
+}
+.write_up_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+header{
+    font-size: 2em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.sub_heading{
+    margin-bottom: 1rem;
+}
+.points{
+    display: flex;
+    margin-top:.5rem;
+
+}
+.points img{
+    width: 1rem;
+    margin-bottom: 1rem;
+    margin-right: .5rem;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+#email{
+    
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    height: 2.7rem;
+    border-radius: 10px;
+    border-width: .5px;
+    padding-left: 1rem;
+    border-color: hsl(231, 7%, 60%);
+}
+#email::placeholder{
+    padding: 20px;
+    color: gray;
+    opacity: 0.5;
+}
+button{
+    height: 3rem;
+    color: white;
+    border-radius: 10px;
+    border-width: 0.5px;
+    background-color:  hsl(234, 29%, 20%);
+}
+button:hover{
+    background-color: hsl(4, 100%, 67%);
+    border-width: 0px;
+}
+
+header,.sub_heading,.email{
+    color: hsl(234, 29%, 20%)   ;
+}
+
+
+
+#success_page{
+    color:  hsl(234, 29%, 20%);
+    margin-top: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    justify-content: center;
+}
+#success_page img{
+    height: 4em;
+    width: 4em;
+    margin-bottom: 1.5rem;
+}
+.success_heading{
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.success_write_up{
+    margin-bottom: 70%;
+}
+#dismiss_button{
+    width: 100%;
+}
+#dismiss_button :hover{
+    background-color: hsl(4, 100%, 67%);
+    color: wjite;
+}
+#validation{
+    color: red;
+}
+
+
+
+@media only screen and (min-width:1440px) {
+    body{
+        background-color: hsl(234, 29%, 20%);
+    }
+    main{
+        border-radius: 20px;
+        margin-top: 10%;
+        margin-bottom: 8%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 60vh;
+        width: 50vw;
+        background-color: white;
+        display: flex;
+        flex-direction: row-reverse;
+
+
+    }
+    
+    .image_section{
+        background-image: url(./newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 50%;
+        margin-top: .5rem;
+        height: 97%;
+
+    }
+    .write_up_section{
+        width: 50%;
+        margin-left: 3rem;
+        margin-right: 4rem;
+    }
+    header{
+        margin-top: rem;
+        font-size: 3em;
+        margin-bottom: .5rem;
+    }
+    .email{
+        margin-top: .5rem;
+        font-size: 10px;
+        font-weight: 700;
+    }
+    #email{
+        margin-bottom: .5rem;
+    }
+    .attribution{
+        color: white;
+    }
+
+
+
+    #success_page{
+        border-radius: 20px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 45vh;
+        width: 45vh;
+        background-color: white;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #success_page img{
+        margin-top: 1rem;
+        height: 2.5em;
+        width: 2.5em;
+        margin-left: 2rem;
+    }
+    .success_heading{
+        margin-top: -.5rem;
+        font-size: 30px;
+        margin-left: 2rem;
+    }
+    .success_write_up{
+        margin-bottom: 7%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    #dismiss_button{
+        width: 80%;
+        margin-left: 2rem;
+    }
+
+}
